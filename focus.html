@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Focus</title>
+</head>
+<style>
+
+input[type=text]
+{
+width:100px;
+background-color:blue;
+ -webkit-transition: width .65s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+input[type=text]:focus
+{
+width:300px;
+background-color:red;
+}
+input[type=password]
+{
+width=100px;
+background-color:blue;
+}
+input[type=password]:focus
+{
+width:300px;
+background-color:red;
+
+}
+input[type=submit]
+{
+background-color:green;
+}
+input[type=submit]:focus
+{
+width:200px;
+background-color:gray;
+}
+
+</style>
+<body>
+Name : <input type="text" name="Name"/>
+<br>
+E-mail : <input type="text" name="email"/>
+<br>
+Password : <input type="password" name="password"/>
+<br>
+<input type="submit" name="Submit"/>
+</body>
+</html>
